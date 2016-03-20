@@ -1,0 +1,99 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#container{
+    width: 70%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 150%;
+    margin: 2% 0%;
+}
+h2{ margin-bottom: 2%; }
+
+#nav{ margin-bottom: .5% }
+#nav li{
+    display: inline-block;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    border: 2px solid;
+    cursor: pointer;
+}
+#nav li:hover{ border: 2px solid #aaa; }
+#nav li.active{ background-color: #000 }
+#nav li.active:hover{ border: 2px solid #000; }
+
+#buttons {
+    height: 3%;
+    position: relative;
+    width: 55%;
+    margin: auto;
+}
+#buttons li{
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+}
+#buttons li:first-child{ left: 0; }
+#buttons li:last-child{ right: 8px; }
+#buttons .play{
+    width: 15px;
+    height: 15px;
+    transform: translateX(-50%);
+    background-image: url('ui-icons.png');
+    background-repeat: no-repeat;
+    background-position: -1px -161px;
+    opacity: 0;
+}
+#buttons buttons{
+    display: block;
+    width: 40px;
+    padding: 3% 10%;
+    border-radius: 0%;
+    color: white;
+    background-color: #000;
+    box-shadow: 0px 0px 0px 2px #aaa;
+}
+#buttons buttons:hover{
+    color: black;
+    background-color: #eee;
+}
+#buttons buttons:active{
+    color: white;
+    background-color: #000;
+}
+
+.slider{
+    width: 55%;
+    height: 400px;
+    margin: 3% auto;
+    padding-top: 1%;
+    box-shadow: 3px -5px 5px 0px #eee, -3px -5px 3px 0px #eee;
+    cursor: pointer;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-image: url('play.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+figure{
+    display: none;
+    position: relative;
+    z-index: -1;
+}
+figcaption {
+    font-weight: 600;
+    margin-top: 4%;
+}
+figure img{
+    width: 65%;
+    display: block;
+    margin: 5% auto;
+}
