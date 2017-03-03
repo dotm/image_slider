@@ -1,4 +1,8 @@
+html {
+    min-height: 800px;
+}
 body {
+    min-height: 800px;
     font-family: sans-serif;
     text-align: center;
 }
